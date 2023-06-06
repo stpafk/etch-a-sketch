@@ -1,5 +1,12 @@
 let color = "black";
 let click = false;
+let colorInput = document.querySelector(".select");
+let hex = document.querySelector(".input-color")
+
+colorInput.addEventListener('input', function() {
+    color = colorInput.value;
+    hex.value = color;
+})
 
 function enableColor() {
   click = (click === false) ? true : false;

@@ -45,9 +45,25 @@ body {
     margin-bottom: 10px;
   }
 
-.colorSelect {
-  width: 50px;
+.colorPicker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+  .input-color {
+  display: none;
+  padding: 0;
+  margin: 0 5px;
+  height: 25px;
+  }
+
+  .select {
+    border: none;
+    background-color: transparent;
+    height: 37px;
+    width: 40px;
+  }
 
   button {
     padding: 0.3em 1.2em;
@@ -85,7 +101,7 @@ body {
     color: rgb(255, 255, 255);
   }
   .size {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 50px;
   }
   
