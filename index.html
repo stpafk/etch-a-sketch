@@ -11,7 +11,11 @@
     <div class="flex-container">
         <div class="title"><h1>Sketch Pad</h1></div>
         <div class="content">
-            <div class="board"></div>
+            <div class="board" onclick="enableColor()"></div>
+            <div class="colorPicker">
+                <p>Choose Color: </p>
+                <input type="color" class="select">
+            </div>
             <div class="buttons">
                 <button class="blackButton" onclick="changeColor('black')">Black</button>
                 <button class="erasor" onclick="changeColor('white')">Erasor</button>
@@ -19,7 +23,7 @@
                 <button onclick="resetBoard()">Reset</button>
             </div>
             <div>
-                <input type="text" placeholder="Place size of Board" value=16 onchange="changeSize(this.value)">
+                <input class="size" type="text" placeholder="Place size of Board" value=16 onchange="changeSize(this.value)">
                 <button>Set Size</button>
             </div>
             <div class="error">Input must be between 2 and 100</div>

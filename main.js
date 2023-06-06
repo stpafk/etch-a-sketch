@@ -1,6 +1,9 @@
 let color = "black";
-let click = true;
+let click = false;
 
+function enableColor() {
+  click = (click === false) ? true : false;
+}
 
 function populateBoard(size) {
     let board = document.querySelector(".board");
@@ -18,7 +21,7 @@ function populateBoard(size) {
     }
 }
 
-populateBoard(16)
+populateBoard(16);
 
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
@@ -30,6 +33,7 @@ function changeSize(input) {
 }
 
 function colorSquare() {
+
     if (click) {
       if (color === "random") {
         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
@@ -39,7 +43,7 @@ function colorSquare() {
     }
   }
 
-function changeColor (choice) {
+function changeColor(choice) {
     color = choice;
 }
 

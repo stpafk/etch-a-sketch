@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: comic sans ms
+}
+
+
+
 .flex-container {
     height: 100vh;
     width: 100vw;
@@ -37,6 +44,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+.colorSelect {
+  width: 50px;
+}
+
   button {
     padding: 0.3em 1.2em;
     margin: 0 0.3em 0.3em 0;
@@ -72,7 +84,8 @@
     background-color: white;
     color: rgb(255, 255, 255);
   }
-  input {
+  .size {
+    margin-bottom: 50px;
     width: 50px;
   }
   
